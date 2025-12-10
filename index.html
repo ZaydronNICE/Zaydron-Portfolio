@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zaydron Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="Imagenes/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/f1bb77e1d8.js" crossorigin="anonymous"></script>
+	<script src="Jquerry/unitegallery-master/unitegallery-master/dist/js/jquery-11.0.min.js"></script>
+	<script src='Jquerry/unitegallery-master/unitegallery-master/dist/js/unitegallery.min.js'></script>	
+	<link href="Jquerry/unitegallery-master/unitegallery-master/dist/css/unite-gallery.css" rel="stylesheet" >
+	<script src="Jquerry/unitegallery-master/unitegallery-master/dist/themes/tiles/ug-theme-tiles.js"></script>
+	<script src='Jquerry/unitegallery-master/unitegallery-master/dist/themes/slider/ug-theme-slider.js'></script>
+	<script type='text/javascript' src='Jquerry/unitegallery-master/unitegallery-master/dist/themes/default/ug-theme-default.js'></script>
+	<script src="Jquerry/animated-bar-skill-progress/animated-bar-skill-progress/skillProgress.min.js"></script>
+	
+	
+	
+
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			font-family: Horizon;
+			color: white;
+		}
+		body{
+			background-color: #171720;
+		}
+		@font-face {
+			font-family: Horizon;
+  			src: url(Font/Horizon.woff2);
+		}
+		section{
+			width: auto;
+			height: 450px;
+			background-image: url(Imagenes/Home1.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			/* background-position-x: -35px;
+			background-position-y: 0px; */
+			margin: 0;
+			padding-top: 80px;
+			position: relative;
+		}
+		nav{
+			height: 30px;
+			background-color: #de164d;
+  			position: fixed;
+  			top: 0;
+  			width: 100%;
+  			z-index: 10;
+
+		}
+		.textosnav{
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+		.textosnav p{
+			width: 10%;
+			font-size: 15px;
+			display: inline-block;
+			text-align: center;
+
+		}
+		.textosnav a{
+			font-family: "Audiowide", sans-serif;
+		}
+		#aboutnav{
+			margin-right: 6%;
+		}
+		#contactnav{
+			margin-left: 6%;
+		}
+		#espaciocentralnav{
+			width: 20%;
+		}
+		.logo{
+			position: absolute;
+			top: 45px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+  			z-index: 11;
+		}
+		.logo img{
+			height: 100px;
+			width: 100px;
+		}
+		.textohome{
+			margin-top: 160px;
+		}
+		.titulohome{
+			height: 50px;
+			font-size: 60px;
+			text-align: center;
+			line-height: 50px;
+			
+		}
+		.subtitulohome{
+			height: 22px;
+			font-size: 22px;
+			text-align: center;
+			line-height: 22px;
+			margin-top: 5px;
+		}
+		i{
+			font-size: 13px;
+		}
+		.iconos{
+			margin-top: 7px;
+			text-align: center;
+		}
+		.titulos{
+			margin-left: 39%;
+			margin-right: 35%;
+		}
+		.texto2d{
+			margin-top: 2%;
+		}
+		.fondogaleria1{
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 0%;
+			width: auto;
+			height: auto;
+			padding: 1%;
+			background-image: url('Imagenes/FondoGaleria1.png');
+		}
+		.fondogaleria1 P{
+			text-align: center;
+		
+			margin-bottom: 2%;
+			font-size: 35px;
+		}
+		#gallery3 {
+			margin: 0 auto;
+			width: 80%;
+		}
+		#gallery4 {
+			margin: 0 auto;
+			width: 80%;
+		}
+		.titulovideos{
+			height: auto;
+			margin-top: 3%;
+		}
+		.fondogaleriavideos{
+			margin: 0 auto 0% auto;
+			width: 98%;
+			height: auto;
+			padding: 1%;
+			background-image: url('Imagenes/FondoGaleria1.png');
+		}
+		#gallery5 {
+			margin: 0 auto;
+			width: 80%;
+		}
+		.fondogaleriavideos{
+			margin: 0 auto 0% auto;
+			width: 98%;
+			height: auto;
+			padding: 1%;
+			background-image: url('Imagenes/FondoGaleria1.png');
+			
+		}
+		.fondogaleria3{
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 0%;
+			padding: 3%;
+			width: auto;
+			height: auto;
+			padding: 1%;
+			background-image: url('Imagenes/FondoAbout3.jpg');
+		}
+		.aboutcontainer{
+			height: 100%;
+			width: 100%;
+		}
+		.imgydescripcion{
+			display: flex;
+			flex-direction: row;
+		}
+		.foto{
+			width: 400px;
+			height: 415px;
+		}
+		.textoabout{
+		 padding: 1%;
+		 border: 10px solid white;
+		}
+		.hola{
+			font-size: 60px;
+			margin-left: 1%;
+		}
+		.nombre{
+			font-size: 30px;
+			margin-left: 1%;
+		}
+		.puesto{
+			height: 30px;
+			line-height: 30px;
+			margin: 1%;
+			border: 10px solid white;
+			font-size: 20px;
+			text-align: center;
+		}
+		.info{
+			font-size: 20px;
+			height: 40%;
+			margin-top: 2%;
+			margin-bottom: 1%;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+		.chart {
+   		 	padding-bottom: 2vh;
+    		width: 100%;             
+    		max-width: 100%;         
+    		box-sizing: border-box;
+		}
+		.skill-item {
+			margin-bottom: 2.5vh;    
+			width: 100%;
+		}
+		.skill-header {
+			display: flex;           
+			justify-content: space-between; 
+			font-family: "Zen Dots", sans-serif;
+			font-size: 2vh;         
+		}
+		.skill-percentage {
+			color: #ffffff;        
+		}
+		.skill-bar-bg {
+			width: 100%;             
+			height: 1.5vh;           
+			background-color: #7b7894;
+			border-radius: 1vh;      
+			overflow: hidden;        
+		}
+		.skill-bar-fill {
+			height: 100%;
+			background-color: #ffffff; 
+			border-radius: 1vh;     
+			animation: fillBar 1.5s ease-out forwards;
+			transform-origin: left;
+			transform: scaleX(0);    
+		}
+		.textoskills{
+			margin-top: 20px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			border: 5px solid white;
+			background-color: #de164d;
+		}
+		.texto2skills{
+			margin-top: 20px;
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 20px;
+			text-align: center;
+			border: 5px solid white;
+			background-color: #de164d;
+		}
+		@keyframes fillBar {
+			to {
+				transform: scaleX(1); 
+			}
+		}
+		.fondogaleria4{
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 0%;
+			padding: 3%;
+			width: auto;
+			height: auto;
+			padding: 1%;
+			text-align: center;
+			background-image: url('Imagenes/FondoGaleria1.png');
+		}
+		.fondogaleria4 img{
+			width: 30%;
+			height: 30%;
+		}
+		footer{
+			height: auto;
+			padding: 2%;
+			text-align: center;
+		}
+		footer p{
+			font-size: 10px;
+		}
+
+		@media (max-width: 900px) {
+			section {
+				height: auto;
+				padding-top: 30px;
+			}
+			.textosnav p {
+				width: 15%;
+				font-size: 12px;
+			}
+			.logo{
+				top: 45px;
+			}
+			.logo img {
+				height: 80px;
+				width: 80px;
+			}
+			.titulohome {
+				font-size: 50px;
+			}
+			.subtitulohome {
+				font-size: 18px;
+			}
+			.iconos i {
+				font-size: 12px;
+			}
+			.titulos img {
+				width: 80%;
+				height: auto;
+			}
+			.titulovideos img {
+				width: 80%;
+				height: auto;
+			}
+			.fondogaleria1, .fondogaleria2, .fondogaleria3, .fondogaleria4, .fondogaleriavideos {
+				margin-left: 0%;
+				margin-right: 0%;
+				padding: 0.5%;
+			}
+			.fondogaleria1 P {
+				font-size: 30px;
+			}
+			#gallery, #gallery2, #gallery3, #gallery4, #gallery5 {
+				width: 100% !important;
+			}
+			.imgydescripcion {
+				flex-direction: column;
+				align-items: center;
+			}
+			.foto {
+				width: 300px;
+				height: 310px;
+			}
+			.textoabout {
+				padding: 0.5%;
+				border: 5px solid white;
+			}
+
+	
+		@media (max-width: 480px) {
+			section {
+				height: auto;
+				padding-top: 20px;
+			}
+			nav {
+				margin-top: 80px;
+				height: auto;
+				position: relative;
+			}
+			.textosnav {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				height: auto;
+				padding: 10px 0;
+			}
+			#aboutnav, #d2nav, #espaciocentralnav, #d3nav, #contactnav{
+				margin: 0;
+			}
+			.textosnav p {
+				width: 100%;
+				margin: 5px 0;
+				font-size: 14px;
+			}
+			#espaciocentralnav {
+				display: none;
+			}
+			.logo {
+				position: absolute;
+				top: -45px;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 2;
+			}
+			.logo img {
+				height: 100px;
+				width: 100px;
+			}
+			.textohome {
+				margin-top: 160px;
+			}
+			.titulohome {
+				font-size: 40px;
+			}
+			.subtitulohome {
+				font-size: 16px;
+			}
+			.iconos {
+				margin-top: 5px;
+			}
+			.iconos i {
+				font-size: 14px;
+				margin: 0 5px;
+			}
+			.titulos {
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+			.titulos img {
+				width: 100%;
+				height: auto;
+			}
+			.fondogaleria1, .fondogaleria2, .fondogaleria3, .fondogaleria4 {
+				margin-left: 0%;
+				margin-right: 0%;
+				padding: 0.5%;
+			}
+			.fondogaleria1 P {
+				font-size: 25px;
+			}
+			.texto2d {
+				font-size: 18px;
+			}
+			#gallery, #gallery2, #gallery3, #gallery4 {
+				width: 100% !important;
+			}
+			.imgydescripcion {
+				flex-direction: column;
+				align-items: center;
+			}
+			.foto {
+				width: 250px;
+				height: 260px;
+			}
+			.textoabout {
+				padding: 0.5%;
+				border: 3px solid white;
+				text-align: center;
+			}
+			.hola {
+				font-size: 40px;
+			}
+			.nombre {
+				font-size: 20px;
+			}
+			.puesto {
+				font-size: 16px;
+			}
+			.info {
+				font-size: 16px;
+			}
+			.skill-item {
+				margin-bottom: 1vh;
+			}
+			.skill-header {
+				font-size: 1vh;
+			}
+			.skill-bar-bg, .skill-bar-fill {
+				height: 0.8vh;
+			}
+			.textoskills, .texto2skills {
+				font-size: 18px;
+			}
+			.fondogaleria4 img {
+				width: 80%;
+				height: 80%;
+			}
+			.fondogaleria4{
+				font-size: 10px;
+				padding: 6%;
+			}
+			footer {
+				padding: 2%;
+			}
+			footer p {
+				font-size: 10px;
+			}
+		}
+
+		@media (min-width: 4096px) {
+			section {
+				height: 600px;
+				padding-top: 120px;
+			}
+			.textosnav p {
+				font-size: 20px;
+			}
+			.logo img {
+				height: 150px;
+				width: 150px;
+			}
+			.titulohome {
+				font-size: 100px;
+			}
+			.subtitulohome {
+				font-size: 30px;
+			}
+			.iconos i {
+				font-size: 20px;
+			}
+			.titulos {
+				margin-left: 30%;
+				margin-right: 30%;
+			}
+			.titulos img {
+				width: 120%;
+				height: auto;
+				margin-left: 45%;
+				margin-right: 45%;
+			}
+			.fondogaleria1, .fondogaleria2, .fondogaleria3, .fondogaleria4, .fondogaleriavideos {
+				margin-left: 5%;
+				margin-right: 5%;
+				padding: 2%;
+			}
+			.fondogaleria1 P {
+				font-size: 50px;
+			}
+			.texto2d {
+				font-size: 25px;
+			}
+			#gallery, #gallery2, #gallery3, #gallery4, #gallery5 {
+				width: 90% !important;
+			}
+			.imgydescripcion {
+				flex-direction: row;
+			}
+			.foto {
+				width: 600px;
+				height: 620px;
+			}
+			.textoabout {
+				padding: 2%;
+				border: 15px solid white;
+			}
+			.hola {
+				font-size: 80px;
+			}
+			.nombre {
+				font-size: 40px;
+			}
+			.puesto {
+				font-size: 25px;
+			}
+			.info {
+				font-size: 25px;
+			}
+			.skill-header {
+				font-size: 3vh;
+			}
+			.skill-bar-bg, .skill-bar-fill {
+				height: 2vh;
+			}
+			.textoskills, .texto2skills {
+				font-size: 30px;
+			}
+			.fondogaleria4 img {
+				width: 50%;
+				height: 50%;
+			}
+			footer {
+				padding: 3%;
+			}
+			footer p {
+				font-size: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<nav>
+			<div class="textosnav">
+			<p id="aboutnav"><a href="#about" style="color: inherit; text-decoration: none;">ABOUT</a></p>
+			<p id="d2nav"><a href="#d2" style="color: inherit; text-decoration: none;">2D</a></p>
+			<p id="espaciocentralnav"></p>
+			<p id="d3nav"><a href="#d3" style="color: inherit; text-decoration: none;">3D</a></p>
+			<p id="contactnav"><a href="#contact" style="color: inherit; text-decoration: none;">CONTACT</a></p>
+			</div>
+			<div class="logo">
+				<img src="Imagenes/Logo.png">
+			</div>
+		</nav>
+		<div class="textohome">
+			<p class="titulohome">ZAYDRON</p>
+			<p class="subtitulohome">2D/3D ARTIST</p>
+			<div class="iconos">
+				<a href="https://www.instagram.com/zaydronnice/"><i class="fa-brands fa-instagram" id="ig" ></i></a>
+				<a href="https://x.com/zaydronNICE"><i class="fa-brands fa-x-twitter" id="tw" ></i></a>
+				<a href="https://www.youtube.com/@zaydron"><i class="fa-brands fa-youtube" id="yt" ></i></a>
+				<a href="https://www.tiktok.com/@zaydronnice"><i class="fa-brands fa-tiktok" id="tk" ></i></a>
+			</div>
+			<div></div>
+		</div>
+	</section>
+	<div id="d2" class="titulos">
+		<img src="Imagenes/2D/Títulos/2d.png" alt="">
+	</div>
+	<section class="fondogaleria1">
+		<p>ILLUSTRATIONS</p>
+		<div id="gallery" style="display:none;">
+				<a href="http://unitegallery.net">
+			<img alt="Confinio Splash Art 1"
+			     src="Imagenes/2D/Miniaturas/44.jpg"
+				  data-image="Imagenes/2D/44.jpg"
+			     data-description="Confinio Splash Art 1"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Confinio Splash Art 2"
+			     src="Imagenes/2D/Miniaturas/45.jpg"
+				  data-image="Imagenes/2D/45.jpg"
+			     data-description="Confinio Splash Art 2"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Skull"
+			     src="Imagenes/2D/Miniaturas/1.jpg"
+				 data-image="Imagenes/2D/1.jpg"
+			     data-description="Skull"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Adventure Time"
+			     src="Imagenes/2D/Miniaturas/2.jpg"
+				 data-image="Imagenes/2D/2.jpg"
+			     data-description="Adventure Time"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="3🦴"
+			     src="Imagenes/2D/Miniaturas/3.jpg"
+				 data-image="Imagenes/2D/3.jpg"
+			     data-description="3🦴"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Bomu"
+			     src="Imagenes/2D/Miniaturas/4.jpg"
+				 data-image="Imagenes/2D/4.jpg"
+			     data-description="Bomu"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Dylan"
+			     src="Imagenes/2D/Miniaturas/5.jpg"
+				 data-image="Imagenes/2D/5.jpg"
+			     data-description="Dylan"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Facecard"
+			     src="Imagenes/2D/Miniaturas/6.jpg"
+				 data-image="Imagenes/2D/6.jpg"
+			     data-description="Facecard"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Milton"
+			     src="Imagenes/2D/Miniaturas/7.jpg"
+				 data-image="Imagenes/2D/7.jpg"
+			     data-description="Milton"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Clown Girl"
+			     src="Imagenes/2D/Miniaturas/9.jpg"
+				 data-image="Imagenes/2D/9.jpg"
+			     data-description="Clown Girl"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Nobara"
+			     src="Imagenes/2D/Miniaturas/37.jpg"
+				  data-image="Imagenes/2D/37.jpg"
+			     data-description="Nobara"
+			     style="display:none">
+			</a>
+				<a href="http://unitegallery.net">
+			<img alt="Angel"
+			     src="Imagenes/2D/Miniaturas/16.jpg"
+				 data-image="Imagenes/2D/16.jpg"
+			     data-description="Angel"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Bomu BOOM"
+			     src="Imagenes/2D/Miniaturas/8.jpg"
+				 data-image="Imagenes/2D/8.jpg"
+			     data-description="Bomu BOOM"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="William Afton"
+			     src="Imagenes/2D/Miniaturas/10.jpg"
+				 data-image="Imagenes/2D/10.jpg"
+			     data-description="William Afton"
+			     style="display:none">
+			</a>
+				<a href="http://unitegallery.net">
+			<img alt="LovLov"
+			     src="Imagenes/2D/Miniaturas/35.jpg"
+				  data-image="Imagenes/2D/35.jpg"
+			     data-description="LovLov"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Lugia"
+			     src="Imagenes/2D/Miniaturas/12.jpg"
+				 data-image="Imagenes/2D/12.jpg"
+			     data-description="Lugia"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Finn"
+			     src="Imagenes/2D/Miniaturas/13.jpg"
+				 data-image="Imagenes/2D/13.jpg"
+			     data-description="Finn"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Nana"
+			     src="Imagenes/2D/Miniaturas/15.jpg"
+				 data-image="Imagenes/2D/15.jpg"
+			     data-description="Nana"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Tengu"
+			     src="Imagenes/2D/Miniaturas/17.jpg"
+				 data-image="Imagenes/2D/17.jpg"
+			     data-description="Tengu"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Sanji"
+			     src="Imagenes/2D/Miniaturas/18.jpg"
+				 data-image="Imagenes/2D/18.jpg"
+			     data-description="Sanji"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Practice"
+			     src="Imagenes/2D/Miniaturas/20.jpg"
+				 data-image="Imagenes/2D/20.jpg"
+			     data-description="Practice"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="My Star"
+			     src="Imagenes/2D/Miniaturas/21.jpg"
+				  data-image="Imagenes/2D/21.jpg"
+			     data-description="My Star"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="⁂"
+			     src="Imagenes/2D/Miniaturas/23.jpg"
+				  data-image="Imagenes/2D/23.jpg"
+			     data-description="⁂"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Zoro"
+			     src="Imagenes/2D/Miniaturas/25.jpg"
+				  data-image="Imagenes/2D/25.jpg"
+			     data-description="Zoro"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Retro"
+			     src="Imagenes/2D/Miniaturas/27.jpg"
+				  data-image="Imagenes/2D/27.jpg"
+			     data-description="Retro"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Legendary Trio"
+			     src="Imagenes/2D/Miniaturas/28.jpg"
+				  data-image="Imagenes/2D/28.jpg"
+			     data-description="Legendary Trio"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Val"
+			     src="Imagenes/2D/Miniaturas/29.jpg"
+				  data-image="Imagenes/2D/29.jpg"
+			     data-description="Val"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Nobara"
+			     src="Imagenes/2D/Miniaturas/30.jpg"
+				  data-image="Imagenes/2D/30.jpg"
+			     data-description="Nobara"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Cobblemon Splash Art Server"
+			     src="Imagenes/2D/Miniaturas/31.jpg"
+				  data-image="Imagenes/2D/31.jpg"
+			     data-description="Cobblemon Splash Art Server"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="C.A."
+			     src="Imagenes/2D/Miniaturas/32.jpg"
+				  data-image="Imagenes/2D/32.jpg"
+			     data-description="C.A."
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="DAASKULL"
+			     src="Imagenes/2D/Miniaturas/33.jpg"
+				  data-image="Imagenes/2D/33.jpg"
+			     data-description="DAASKULL"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="PRACTICE"
+			     src="Imagenes/2D/Miniaturas/34.jpg"
+				  data-image="Imagenes/2D/34.jpg"
+			     data-description="PRACTICE"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Jinx"
+			     src="Imagenes/2D/Miniaturas/36.jpg"
+				  data-image="Imagenes/2D/36.jpg"
+			     data-description="Jinx"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Gengar"
+			     src="Imagenes/2D/Miniaturas/38.jpg"
+				  data-image="Imagenes/2D/38.jpg"
+			     data-description="Gengar"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Gwen"
+			     src="Imagenes/2D/Miniaturas/39.jpg"
+				  data-image="Imagenes/2D/39.jpg"
+			     data-description="Gwen"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Sh*t"
+			     src="Imagenes/2D/Miniaturas/40.jpg"
+				  data-image="Imagenes/2D/40.jpg"
+			     data-description="Sh*t"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Yellow"
+			     src="Imagenes/2D/Miniaturas/41.jpg"
+				  data-image="Imagenes/2D/41.jpg"
+			     data-description="Yellow"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Ryuko"
+			     src="Imagenes/2D/Miniaturas/42.jpg"
+				  data-image="Imagenes/2D/42.jpg"
+			     data-description="Ryuko"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Lov"
+			     src="Imagenes/2D/Miniaturas/14.jpg"
+				 data-image="Imagenes/2D/14.jpg"
+			     data-description="Lov"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Smiler"
+			     src="Imagenes/2D/Miniaturas/19.jpg"
+				 data-image="Imagenes/2D/19.jpg"
+			     data-description="Smiler"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="DAASKULL"
+			     src="Imagenes/2D/Miniaturas/26.jpg"
+				  data-image="Imagenes/2D/26.jpg"
+			     data-description="DAASKULL"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Itadori Sketch"
+			     src="Imagenes/2D/Miniaturas/22.jpg"
+				  data-image="Imagenes/2D/22.jpg"
+			     data-description="Itadori Sketch"
+			     style="display:none">
+			</a>
+				<a href="http://unitegallery.net">
+			<img alt="Felix"
+			     src="Imagenes/2D/Miniaturas/24.jpg"
+				  data-image="Imagenes/2D/24.jpg"
+			     data-description="Felix"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Cyberpunk Sketch"
+			     src="Imagenes/2D/Miniaturas/11.jpg"
+				 data-image="Imagenes/2D/11.jpg"
+			     data-description="Cyberpunk Sketch"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Baltimore"
+			     src="Imagenes/2D/Miniaturas/43.jpg"
+				  data-image="Imagenes/2D/43.jpg"
+			     data-description="Baltimore"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="D-PAI"
+			     src="Imagenes/2D/Miniaturas/46.jpg"
+				  data-image="Imagenes/2D/46.jpg"
+			     data-description="D-PAI"
+			     style="display:none">
+			</a>
+			
+		</div>
+		<p class="texto2d">CONCEPT ART</p>
+		<div id="gallery2" style="display:none;">
+			<a href="http://unitegallery.net">
+			<img alt="Arcane Color Sheet"
+			     src="Imagenes/2D/Miniaturas/Concept/1.jpg"
+				  data-image="Imagenes/2D/Concept/1.jpg"
+			     data-description="Arcane Color Sheet"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Arcane Structure"
+			     src="Imagenes/2D/Miniaturas/Concept/2.jpg"
+				  data-image="Imagenes/2D/Concept/2.jpg"
+			     data-description="Arcane Structure"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Arcane Expressions"
+			     src="Imagenes/2D/Miniaturas/Concept/3.jpg"
+				  data-image="Imagenes/2D/Concept/3.jpg"
+			     data-description="Arcane Expressions"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Arcane Poses"
+			     src="Imagenes/2D/Miniaturas/Concept/4.jpg"
+				  data-image="Imagenes/2D/Concept/4.jpg"
+			     data-description="Arcane Poses"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Hollow West Concept"
+			     src="Imagenes/2D/Miniaturas/Concept/5.jpg"
+				  data-image="Imagenes/2D/Concept/5.jpg"
+			     data-description="Hollow West Concept"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Ziggy"
+			     src="Imagenes/2D/Miniaturas/Concept/6.jpg"
+				  data-image="Imagenes/2D/Concept/6.jpg"
+			     data-description="Ziggy"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Concept Practice"
+			     src="Imagenes/2D/Miniaturas/Concept/7.jpg"
+				  data-image="Imagenes/2D/Concept/7.jpg"
+			     data-description="Concept Practice"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Battle Bot Concept"
+			     src="Imagenes/2D/Miniaturas/Concept/8.jpg"
+				  data-image="Imagenes/2D/Concept/8.jpg"
+			     data-description="Battle Bot Concept"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="D-PAI"
+			     src="Imagenes/2D/Miniaturas/Concept/9.jpg"
+				  data-image="Imagenes/2D/Concept/9.jpg"
+			     data-description="D-PAI"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="D-PAI Enemies"
+			     src="Imagenes/2D/Miniaturas/Concept/10.jpg"
+				  data-image="Imagenes/2D/Concept/10.jpg"
+			     data-description="D-PAI Enemies"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="D-PAI Extra"
+			     src="Imagenes/2D/Miniaturas/Concept/11.jpg"
+				  data-image="Imagenes/2D/Concept/11.jpg"
+			     data-description="D-PAI Extra"
+			     style="display:none">
+			</a>
+			<a href="http://unitegallery.net">
+			<img alt="Skully"
+			     src="Imagenes/2D/Miniaturas/Concept/12.jpg"
+				  data-image="Imagenes/2D/Concept/12.jpg"
+			     data-description="Skully"
+			     style="display:none">
+			</a>
+		</div>
+		<P class="texto2d">STORYBOARDS</P>
+		<div id="gallery3" style="display:none;">
+			<img alt="Skully"
+             	data-type="youtube"
+             	data-videoid="k6wu3O6lYVA"
+            	data-description="Skully">
+
+			 <img alt="Arcane"
+             	data-type="youtube"
+             	data-videoid="4_TQ3Pm8kgE"
+            	data-description="Arcane">
+
+			 <img alt="Ziggy"
+             	data-type="youtube"
+             	data-videoid="LFyAT1qABCY"
+				data-description="Ziggy">
+		</div>
+	</section>
+	<div id="d3" class="titulos">
+		<img src="Imagenes/2D/Títulos/3d.png" alt="">
+	</div>
+	<section class="fondogaleria2">
+		<div id="gallery4" style="display:none;">
+			
+			 <img alt="Ziggy"
+             	data-type="youtube"
+             	data-videoid="t4FlXzF7UzY"
+				data-description="Ziggy">
+		
+			 <img alt="Ziggy (sin textures)"
+              data-type="youtube"
+              data-videoid="I75CvBTJxZo"
+		  	  data-description="Ziggy">
+
+			<img alt="Ziggy malla"
+              data-type="youtube"
+              data-videoid="zfLz5At8Z8w"
+			  data-description="Ziggy">
+		
+			 <img alt="Ziggy Escena"
+              data-type="youtube"
+              data-videoid="9pTFqkebU_E"
+		   	  data-description="Ziggy">
+
+			<img alt="Arcane"
+              data-type="youtube"
+              data-videoid="Xp6lZ2jAbWQ"
+		   	  data-description="Arcane">
+			<img alt="Finn"
+              data-type="youtube"
+              data-videoid="OZ-gSOA8HIE"
+		   	  data-description="Finn">
+		</div>
+	</section>
+	<div class="titulos" style="margin-top: 2%;">
+		<img src="Imagenes/2D/Títulos/editing.png" alt="">
+	</div>
+	<section class="fondogaleriavideos">
+		<div id="gallery5" style="display:none;">
+			<img alt="Montaje Musical"
+             	data-type="youtube"
+             	data-videoid="GiFNKfu4QjU"
+            	data-description="Montaje Musical">
+
+			 <img alt="Kinetic"
+             	data-type="youtube"
+             	data-videoid="g39bIvHLUDo"
+            	data-description="Kinetic">
+		</div>
+	</section>
+	<div id="about" class="titulos">
+		<img src="Imagenes/2D/Títulos/about.png" alt="">
+	</div>
+	<section class="fondogaleria3">
+		<div class="aboutcontainer">
+			<div class="imgydescripcion">
+				<div><img class="foto" src="Imagenes/Perfil.jpg" alt=""></div>
+				<div class="textoabout">
+					<P class="hola">Hi! I AM</P>
+					<p class="nombre">DAYRON MARTÍNEZ RODRÍGUEZ - ZAYDRON</p>
+					<p class="puesto">Concept Artist - Splash Art Artist - 3D Modeler</p>
+					<p class="info">2D and 3D artist who loves creating bright and “explosive” designs, using strong colors and dynamic shapes that catch attention quickly. I enjoy exploring visual styles that show energy, creativity, and personality in every project.</p>
+				</div>
+			</div>
+			<div class="container_about">
+				
+				<div class="skills">
+					<p class="textoskills">Skills</p>
+					<div class="chart">
+					</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Concept Art</span>
+					<span class="skill-percentage">80%</span>
+				</div>
+
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 80%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Illustration</span>
+					<span class="skill-percentage">90%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 90%;"></div>
+				</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">2D Animation</span>
+					<span class="skill-percentage">70%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 70%;"></div>
+				</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">3D Animation</span>
+					<span class="skill-percentage">60%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 60%;"></div>
+				</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title"> 3D Modeling</span>
+					<span class="skill-percentage">70%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 70%;"></div>
+				</div>
+			</div>
+
+			<p class="texto2skills">Program Skills</p>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Clip Studio Paint</span>
+					<span class="skill-percentage">100%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 100%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Blender</span>
+					<span class="skill-percentage">80%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 80%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Photoshop</span>
+					<span class="skill-percentage">90%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 90%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">Premiere Pro</span>
+					<span class="skill-percentage">80%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 80%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">After Effects</span>
+					<span class="skill-percentage">70%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 70%;"></div>
+				</div>
+			</div>
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title">DaVinci Rewsolve</span>
+					<span class="skill-percentage">80%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 80%;"></div>
+				</div>
+			</div>
+        </div>
+    </section>  
+	<div id="contact" class="titulos">
+		<img src="Imagenes/2D/Títulos/contact.png" alt="">
+	</div>
+    <section class="fondogaleria4">
+		<img src="Imagenes/ImgContact.png" alt="">
+		<p>If you are interested in working with me, contact me at <p style="color: #7b7894;">zaydroncontact@gmail.com</p>
+ or send me a message on any of my social media.</p>
+	</section>
+	<footer>
+		<p>© 2025 Zaydron</p>
+		<div class="iconos">
+				<a href="https://www.instagram.com/zaydronnice/"><i class="fa-brands fa-instagram" id="ig" ></i></a>
+				<a href="https://x.com/zaydronNICE"><i class="fa-brands fa-x-twitter" id="tw" ></i></a>
+				<a href="https://www.youtube.com/@zaydron"><i class="fa-brands fa-youtube" id="yt" ></i></a>
+				<a href="https://www.tiktok.com/@zaydronnice"><i class="fa-brands fa-tiktok" id="tk" ></i></a>
+			</div>
+	</footer>
+</body>
+	</body>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery({
+				gallery_theme:"tiles",
+				tiles_type:"justified",
+			});
+
+		});
+
+	</script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery2").unitegallery({
+				gallery_theme:"tiles",
+				tiles_type:"justified",
+			});
+
+		});
+
+	</script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery3").unitegallery({
+				gallery_theme:"slider",
+				gallery_height:450,
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery4").unitegallery({
+				gallery_theme:"default",
+			});
+		});
+		
+	</script>
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery5").unitegallery({
+				gallery_theme:"slider",
+				gallery_height:450,
+			});
+
+		});
+	</script>
+	<script>// SkillProgress(chartClass, chartBarClass, labelClass, startDelay, timeAnimation);
+SkillProgress(".chart", ".chart_bar", ".label", 100, 1500);</script>
